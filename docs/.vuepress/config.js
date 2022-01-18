@@ -62,8 +62,8 @@ module.exports = {
                     "/md/rocketmq/": rocketmq(),
                     "/md/algorithm/": algorithm(),
                     "/md/rabbitmq/": rabbitmq(),
-                    "/md/transaction": transaction(),
-                    "/md/seata": seata()
+                    "/md/transaction/": transaction(),
+                    "/md/seata/": seata()
                 }
             }
         }
@@ -139,8 +139,8 @@ function seata() {
             sidebarDepth: 0,
             children: [
                 "01.seata和spring是如何整合的.md",
-                "02.只需一个注解就能开启分布式事务.md ",
-                "03.TM RM 客户端的初始化过程.md ",
+                "02.只需一个注解就能开启分布式事务.md",
+                "03.TM RM 客户端的初始化过程.md",
                 "04.全局事务id是如何传递的.md",
                 "05.seata-server启动时都做了哪些操作.md",
                 "06.seata server各种消息处理流程.md",
