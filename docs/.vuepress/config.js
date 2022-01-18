@@ -42,7 +42,17 @@ module.exports = {
                         text: 'RabbitMq', link: '/md/rabbitmq/01.消息中间件的诸侯征战史.md'
                     },
                     {
-                        text: 'Github', link: 'https://github.com/fuzhengwei/CodeGuide'
+                        text: '分布式事务',
+                        items: [
+                            {
+                                text: '解决方案',
+                                link: '/md/transaction/01.7种常见解决方案汇总.md'
+                            },
+                            {
+                                text: 'seata',
+                                link: '/md/seata/01.seata和spring是如何整合的.md'
+                            },
+                        ]
                     }
                 ],
                 sidebar: {
@@ -51,7 +61,9 @@ module.exports = {
                     "/md/spring/": spring(),
                     "/md/rocketmq/": rocketmq(),
                     "/md/algorithm/": algorithm(),
-                    "/md/rabbitmq/": rabbitmq()
+                    "/md/rabbitmq/": rabbitmq(),
+                    "/md/transaction": transaction(),
+                    "/md/seata": seata()
                 }
             }
         }
@@ -96,6 +108,46 @@ function rabbitmq() {
                 "04.RabbitMQ整合Spring Boot.md",
                 "05.RabbitMQ如何保证消息的可靠投递.md",
                 "06.如何处理消费过程中的重复消息.md"
+            ]
+        }
+    ]
+}
+
+function transaction() {
+    return [
+        {
+            title: "分布式事务解决方案",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "01.7种常见解决方案汇总.md",
+                "02.XA规范.md",
+                "03.Seata AT模式.md",
+                "04.TCC设计思想及其可能遇到的问题.md",
+                "05.Seata TCC 模式.md",
+                "06.RocketMQ事务消息.md",
+            ]
+        }
+    ]
+}
+
+function seata() {
+    return [
+        {
+            title: "seata源码解析",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "01.seata和spring是如何整合的.md",
+                "02.只需一个注解就能开启分布式事务.md ",
+                "03.TM RM 客户端的初始化过程.md ",
+                "04.全局事务id是如何传递的.md",
+                "05.seata-server启动时都做了哪些操作.md",
+                "06.seata server各种消息处理流程.md",
+                "07.事务状态及全局锁的存储.md",
+                "08.分支事务的提交或回滚.md",
+                "09.seata AT模式是如何实现的.md",
+                "10.seata是如何支持TCC模式的.md"
             ]
         }
     ]
