@@ -49,7 +49,20 @@ module.exports = {
                                 link: '/md/transaction/01.7种常见解决方案汇总.md'
                             },
                             {
-                                text: 'seata',
+                                text: 'Seata',
+                                link: '/md/seata/01.seata和spring是如何整合的.md'
+                            },
+                        ]
+                    },
+                    {
+                        text: 'RPC',
+                        items: [
+                            {
+                                text: '手写RPC',
+                                link: '/md/transaction/01.7种常见解决方案汇总.md'
+                            },
+                            {
+                                text: 'Dubbo',
                                 link: '/md/seata/01.seata和spring是如何整合的.md'
                             },
                         ]
