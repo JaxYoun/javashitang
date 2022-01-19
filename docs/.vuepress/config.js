@@ -36,7 +36,7 @@ module.exports = {
                         text: 'Spring', link: ''
                     },
                     {
-                        text: 'Mybatis', link: '/md/mybatis/01.JDBC用法一览.md'
+                        text: 'Mybatis', link: '/md/mybatis/JDBC用法一览.md'
                     },
                     {
                         text: 'mq',
@@ -102,19 +102,19 @@ function mybatis() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                "01.JDBC用法一览.md",
-                "02.MyBatis用法一览.md",
-                "03.聊聊那些实用的工具类.md",
-                "04.配置解析流程.md",
-                "05.SQL解析流程.md",
-                "06.SQL执行流程.md",
-                "07.为什么一级缓存和二级缓存都不建议使用.md",
-                "08.参数处理器是如何兼容这么多种类型的参数.md",
-                "09.动态代理让sql执行更安全高效.md",
-                "10.强大的插件是如何工作的.md",
-                "11.Mybatis如何和Spring进行整合.md",
-                "12.事务管理.md",
-                "13.Mybatis是如何兼容这么多日志框架的.md"
+                "JDBC用法一览.md",
+                "MyBatis用法一览.md",
+                "聊聊那些实用的工具类.md",
+                "配置解析流程.md",
+                "SQL解析流程.md",
+                "SQL执行流程.md",
+                "为什么一级缓存和二级缓存都不建议使用.md",
+                "参数处理器是如何兼容这么多种类型的参数.md",
+                "动态代理让sql执行更安全高效.md",
+                "强大的插件是如何工作的.md",
+                "Mybatis如何和Spring进行整合.md",
+                "事务管理.md",
+                "Mybatis是如何兼容这么多日志框架的.md"
             ]
         }
     ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 09. 动态代理让sql执行更安全高效
+title: 动态代理让sql执行更安全高效
 lock: need
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 06. SQL执行流程
+title: SQL执行流程
 lock: need
 ---
 

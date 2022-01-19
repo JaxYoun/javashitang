@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 01. JDBC用法一览
+title: JDBC用法一览
 lock: need
 ---
 # Mybatis源码解析：JDBC用法一览

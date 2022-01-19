@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 02. MyBatis用法一览
+title: MyBatis用法一览
 lock: need
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11. Mybatis如何和Spring进行整合？
+title: Mybatis如何和Spring进行整合？
 lock: need
 ---
 # Mybatis源码解析：Mybatis如何和Spring进行整合？

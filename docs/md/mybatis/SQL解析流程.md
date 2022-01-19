@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 05. SQL解析流程
+title: SQL解析流程
 lock: need
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 13. Mybatis是如何兼容这么多日志框架的？
+title: Mybatis是如何兼容这么多日志框架的？
 lock: need
 ---
 
