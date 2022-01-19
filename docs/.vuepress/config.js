@@ -43,7 +43,7 @@ module.exports = {
                         items: [
                             {
                                 text: 'RabbitMq',
-                                link: '/md/rabbitmq/01.消息中间件的诸侯征战史.md'
+                                link: '/md/rabbitmq/消息中间件的诸侯征战史.md'
                             },
                             {
                                 text: 'RocketMq',
@@ -127,12 +127,12 @@ function rabbitmq() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                "01.消息中间件的诸侯征战史.md",
-                "02.RabbitMQ的安装及图形界面的使用.md",
-                "03.RabbitMQ最全特性一览及Java Api的使用.md",
-                "04.RabbitMQ整合Spring Boot.md",
-                "05.RabbitMQ如何保证消息的可靠投递.md",
-                "06.如何处理消费过程中的重复消息.md"
+                "消息中间件的诸侯征战史.md",
+                "RabbitMQ的安装及图形界面的使用.md",
+                "RabbitMQ最全特性一览及Java Api的使用.md",
+                "RabbitMQ整合Spring Boot.md",
+                "RabbitMQ如何保证消息的可靠投递.md",
+                "如何处理消费过程中的重复消息.md"
             ]
         }
     ]

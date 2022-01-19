@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 02. RabbitMQ的安装及图形界面的使用
+title: RabbitMQ的安装及图形界面的使用
 lock: need
 ---
+
+# RabbitMQ的安装及图形界面的使用
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201007142508554.jpg?)
 ## 安装RabbitMQ

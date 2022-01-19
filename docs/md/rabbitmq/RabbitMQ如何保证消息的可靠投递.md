@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 05. RabbitMQ如何保证消息的可靠投递
+title: RabbitMQ如何保证消息的可靠投递
 lock: need
 ---
+
+# RabbitMQ如何保证消息的可靠投递
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201007180949410.jpg?)
 ## 介绍

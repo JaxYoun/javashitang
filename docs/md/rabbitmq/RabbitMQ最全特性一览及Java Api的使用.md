@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 03. RabbitMQ最全特性一览及Java Api的使用
+title: RabbitMQ最全特性一览及Java Api的使用
 lock: need
 ---
+
+# RabbitMQ最全特性一览及Java Api的使用
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200112230338941.jpg?)
 # RabbitMQ入门教程

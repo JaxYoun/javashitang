@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 04. RabbitMQ整合Spring Boot
+title: RabbitMQ整合Spring Boot
 lock: need
 ---
+
+# RabbitMQ整合Spring Boot
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020100718035925.jpg?)
 ## 介绍
