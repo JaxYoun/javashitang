@@ -27,7 +27,7 @@ module.exports = {
                 lastUpdated: "上次更新",
                 nav: [
                     {
-                        text: '导读', link: '/md/other/guide-to-reading.md'
+                        text: '算法', link: '开篇：拒绝盲目刷题，如何更高效的学习算法.md '
                     },
                     {
                         text: 'Java', link: ''
@@ -87,7 +87,8 @@ module.exports = {
                     "/md/algorithm/": algorithm(),
                     "/md/rabbitmq/": rabbitmq(),
                     "/md/transaction/": transaction(),
-                    "/md/seata/": seata()
+                    "/md/seata/": seata(),
+                    "/md/algorightm": algorithm()
                 }
             }
         }
@@ -216,10 +217,26 @@ function rocketmq() {
 function algorithm() {
     return [
         {
-            title: "Mybatis",
+            title: "算法",
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "开篇：拒绝盲目刷题，如何更高效的学习算法.md",
+                "复杂度分析：如何进行时间复杂度和空间复杂度分析.md",
+                "排序：十大经典排序算法有哪些应用.md",
+                "排序：如何手写堆排序.md",
+                "栈：从普通栈到单调栈.md",
+                "队列：从普通队列到单调队列.md",
+                "树：熟练手写树的四种遍历方式.md",
+                "链表：指针操作有点乱？这些技巧要记好.md",
+                "哈希：更高效的查找.md",
+                "位操作：省时间，省空间，提效率.md ",
+                "递推和递归：一个自下而上，一个自上而下.md",
+                "贪心：每次都选局部最优解.md",
+                "二分查找：如何优雅的确定搜索区间.md",
+                "回溯：就是一个遍历决策树的过程.md",
+                "搜索：DFS和BFS遍历图的方式有哪些不同.md",
+                "动态规划：更高效的穷举.md",
             ]
         }
     ]
