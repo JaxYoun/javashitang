@@ -39,7 +39,18 @@ module.exports = {
                         text: 'Mybatis', link: '/md/mybatis/01.JDBC用法一览.md'
                     },
                     {
-                        text: 'RabbitMq', link: '/md/rabbitmq/01.消息中间件的诸侯征战史.md'
+                        text: 'mq',
+                        items: [
+                            {
+                                text: 'RabbitMq',
+                                link: '/md/rabbitmq/01.消息中间件的诸侯征战史.md'
+                            },
+                            {
+                                text: 'RocketMq',
+                                link: '/md/seata/01.seata和spring是如何整合的.md'
+                            },
+                        ]
+
                     },
                     {
                         text: '分布式事务',
