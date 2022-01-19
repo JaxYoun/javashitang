@@ -1,10 +1,10 @@
 ---
 home: true
-heroImage: /egg.png
+heroImage: /images/system/acm_logo.png
 heroText: Java识堂
 tagline: 一点一滴都是进步
 actionText: 马上进入 →
-actionLink: /md/other/guide.md
+actionLink: /md/other/writing.md
 features:
 - title: 学习
   details: 读书百遍，其义自见

@@ -27,13 +27,16 @@ module.exports = {
                 lastUpdated: "上次更新",
                 nav: [
                     {
+                        text: '导读', link: '/md/other/writing.md'
+                    },
+                    {
                         text: '算法', link: '/md/algorithm/开篇：拒绝盲目刷题，如何更高效的学习算法.md'
                     },
                     {
-                        text: 'Java', link: ''
+                        text: 'Java', link: '/md/other/writing.md'
                     },
                     {
-                        text: 'Spring', link: ''
+                        text: 'Spring', link: '/md/other/writing.md'
                     },
                     {
                         text: 'Mybatis', link: '/md/mybatis/JDBC用法一览.md'
@@ -47,7 +50,7 @@ module.exports = {
                             },
                             {
                                 text: 'RocketMq',
-                                link: '/md/seata/01.seata和spring是如何整合的.md'
+                                link: '/md/other/writing.md'
                             },
                         ]
 
@@ -70,11 +73,11 @@ module.exports = {
                         items: [
                             {
                                 text: '手写RPC',
-                                link: '/md/transaction/01.7种常见解决方案汇总.md'
+                                link: '/md/other/writing.md'
                             },
                             {
                                 text: 'Dubbo',
-                                link: '/md/seata/01.seata和spring是如何整合的.md'
+                                link: '/md/other/writing.md'
                             },
                         ]
                     }
