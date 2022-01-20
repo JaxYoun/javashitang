@@ -42,7 +42,7 @@ module.exports = {
                         text: 'Mybatis', link: '/md/mybatis/JDBC用法一览.md'
                     },
                     {
-                        text: 'mq',
+                        text: 'MQ',
                         items: [
                             {
                                 text: 'RabbitMq',
@@ -50,7 +50,7 @@ module.exports = {
                             },
                             {
                                 text: 'RocketMq',
-                                link: '/md/other/writing.md'
+                                link: '/md/rocketmq/架构及特性一览.md'
                             },
                         ]
 
@@ -208,10 +208,25 @@ function spring() {
 function rocketmq() {
     return [
         {
-            title: "Mybatis",
+            title: "RocketMQ",
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "架构及特性一览.md",
+                "如何在IDEA中调试RocketMQ源码.md",
+                "NameServer是如何存路由信息的.md",
+                "消息发送流程.md",
+                "RocketMQ是如何存储消息的.md",
+                "高性能存储策略.md",
+                "同步刷盘和异步刷盘的实现.md",
+                "主从同步和读写分离实现.md",
+                "如何快速查找消息.md",
+                "消息拉取和消费流程.md",
+                "消息过滤是如何实现的.md",
+                "长轮询是如何实现的.md",
+                "消息消费失败后的重试逻辑.md",
+                "延时消息是如何实现的.md",
+                "事务消息是如何实现的.md"
             ]
         }
     ]
