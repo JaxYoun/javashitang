@@ -77,7 +77,7 @@ module.exports = {
                             },
                             {
                                 text: 'Dubbo',
-                                link: '/md/other/writing.md'
+                                link: '/md/dubbo/Dubbo的前世今生.md'
                             },
                         ]
                     }
@@ -184,12 +184,56 @@ function seata() {
 function dubbo() {
     return [
         {
-            title: "Mybatis",
+            title: "Dubbo实战",
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "Dubbo的前世今生.md",
+                "5分钟极速入门Dubbo使用.md",
+                "如何高效的测试Dubbo接口.md",
+                "微服务项目（Spring Cloud，Dubbo）如何自测.md"
             ]
-        }
+        },
+        {
+            title: "Dubbo源码解析",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "5分钟了解 Dubbo SPI 的特性.md",
+                "Dubbo SPI是如何实现 AOP，IOC，自适应，自动激活的.md",
+                "基于XML配置原理解析.md",
+                "基于注解配置原理解析.md",
+                "Dubbo服务导出过程.md",
+                "服务提供方接收请求及返回结果.md",
+                "线程模型和线程池策略.md",
+                "BeanFactory，封装复杂Bean的创建过程.md",
+                "Dubbo服务引入过程.md",
+                "服务目录和路由.md",
+                "注册中心.md",
+                "客户端服务调用过程.md",
+                "Dubbo是如何同时支持同步调用和异步调用的.md",
+                "详解集群容错和负载均衡策略.md",
+                "Dubbo过滤器.md"
+            ]
+        },
+        {
+            title: "Dubbo面试",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "高频面试题汇总.md",
+                "Dubbo中用到了哪些设计模式.md"
+            ]
+        },
+        {
+            title: "Dubbo生产问题",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "线程池被打满.md",
+                "@Reference注入为空.md"
+            ]
+        },
     ]
 }
 
