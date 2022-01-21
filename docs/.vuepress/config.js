@@ -27,13 +27,13 @@ module.exports = {
                 lastUpdated: "上次更新",
                 nav: [
                     {
-                        text: '导读', link: '/md/other/writing.md'
+                        text: '导读', link: '/md/other/guide.md'
                     },
                     {
                         text: '算法', link: '/md/algorithm/开篇：拒绝盲目刷题，如何更高效的学习算法.md'
                     },
                     {
-                        text: 'Java', link: '/md/other/writing.md'
+                        text: 'Java面试', link: '/md/java/说一下八种基本数据类型及其包装类吧.md'
                     },
                     {
                         text: 'Spring', link: '/md/spring/Spring容器启动流程.md'
@@ -84,6 +84,7 @@ module.exports = {
                 ],
                 sidebar: {
                     "/md/mybatis/": mybatis(),
+                    "/md/java/": java(),
                     "/md/dubbo/": dubbo(),
                     "/md/spring/": spring(),
                     "/md/rocketmq/": rocketmq(),
@@ -96,6 +97,20 @@ module.exports = {
             }
         }
     }
+}
+
+function java() {
+    return [
+        {
+            title: "Java面试通关",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "说一下八种基本数据类型及其包装类吧.md",
+                "说一下String StringBuffer StringBuilder的区别.md"
+            ]
+        }
+    ]
 }
 
 function mybatis() {
