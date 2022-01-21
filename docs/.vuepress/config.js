@@ -332,11 +332,18 @@ function rocketmq() {
 function algorithm() {
     return [
         {
-            title: "算法",
+            title: "开篇词",
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                "开篇：拒绝盲目刷题，如何更高效的学习算法.md",
+                "开篇：拒绝盲目刷题，如何更高效的学习算法.md"
+            ]
+        },
+        {
+            title: "数据结构篇",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
                 "复杂度分析：如何进行时间复杂度和空间复杂度分析.md",
                 "排序：十大经典排序算法有哪些应用.md",
                 "排序：如何手写堆排序.md",
@@ -345,6 +352,13 @@ function algorithm() {
                 "树：熟练手写树的四种遍历方式.md",
                 "链表：指针操作有点乱？这些技巧要记好.md",
                 "哈希：更高效的查找.md",
+            ]
+        },
+        {
+            title: "算法篇",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
                 "位操作：省时间，省空间，提效率.md",
                 "递推和递归：一个自下而上，一个自上而下.md",
                 "贪心：每次都选局部最优解.md",
