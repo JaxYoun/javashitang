@@ -8,6 +8,17 @@ module.exports = {
             { rel: 'icon', href: '/egg.png' }
             //浏览器的标签栏的网页图标，第一个'/'会遍历public文件夹的文件
         ],
+        ['script', {},
+            `
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?0784d635689a6d6b5b6c15db0b223263";
+                    var s = document.getElementsByTagName("script")[0]; 
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            `
+        ]
     ],
     themeConfig: {
         docsRepo: "erlieStar/javashitang",
