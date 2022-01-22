@@ -118,7 +118,25 @@ function java() {
             sidebarDepth: 0,
             children: [
                 "说一下八种基本数据类型及其包装类吧.md",
-                "说一下String StringBuffer StringBuilder的区别.md"
+                "说一下String StringBuffer StringBuilder的区别.md",
+                "同样是等待，说一下sleep和wait的区别.md",
+                "HashMap是怎么实现的.md",
+                "说一下Http请求的报文格式及常用状态码.md",
+                "线上服务CPU飙高怎么排查.md",
+                "MySQL索引为什么要用B+树实现.md",
+                "JVM运行时数据区包含哪几部分？作用是啥.md",
+                "索引优化策略有哪些.md",
+                "写一下单例模式吧，知道单例模式有几种写法吗.md",
+                "垃圾回收中GC Root对象有哪几种.md",
+                "说一下构造函数，静态代码块，构造代码块等的加载顺序.md",
+                "ThreadLocal的应用场景和注意事项有哪些.md",
+                "你知道zookeeper有哪些作用吗.md",
+                "既然你用了原子类，那你知道CAS的工作原理是啥吗.md",
+                "MyBatis你只写了接口为啥就能执行sql啊.md",
+                "如何查看端口被哪个应用程序占用.md",
+                "Redis的基本数据类型都有哪些应用场景啊.md",
+                "说一下缓存雪崩，缓存穿透，缓存击穿出现的原因及解决方案.md",
+                "画一下Java中线程状态转换图把，越详细越好.md"
             ]
         }
     ]
