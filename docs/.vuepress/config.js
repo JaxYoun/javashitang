@@ -149,13 +149,24 @@ function java() {
                 "Servlet Filter和Spring MVC Interceptor有哪些区别.md",
                 "说一下常见的垃圾收集器及其适用场景.md",
                 "常见的垃圾回收算法有哪些.md",
+                "Spring事务的传播行为有几种.md",
                 "说一下你对数据库事务四大特性的理解.md",
                 "HashMap死循环形成的原因是什么.md",
                 "高并发下如何保证接口的幂等性.md",
                 "volatile关键字用过吧？说一下作用和实现吧.md",
                 "让你写一个单点登陆组件，你会怎么实现.md",
                 "说一下装饰者模式的作用，以及哪些地方用到了装饰者模式吧",
-                "说一下NIO和BIO的区别.md"
+                "说一下NIO和BIO的区别.md",
+                "如何查看etc目录下包含abc字符串的文件.md",
+                "vim中如何跳到文件的开头，第n行，最后一行.md",
+                "你们项目中是怎么解决跨域的.md",
+                "我想把Spring Boot项目放在tomcat中运行，该怎么配置.md",
+                "maven jar包冲突如何解决.md",
+                "如何实现一个RPC框架.md",
+                "说一下Spring MVC的执行流程，为什么要这么设计.md",
+                "说一下Mybatis插件的实现原理.md",
+                "Mybatis一级缓存和二级缓存同时开启，先查询哪个缓存.md",
+                "Redis中过期的key是怎么被删除的.md"
             ]
         }
     ]
