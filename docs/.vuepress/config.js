@@ -166,7 +166,17 @@ function java() {
                 "说一下Spring MVC的执行流程，为什么要这么设计.md",
                 "说一下Mybatis插件的实现原理.md",
                 "Mybatis一级缓存和二级缓存同时开启，先查询哪个缓存.md",
-                "Redis中过期的key是怎么被删除的.md"
+                "Redis中过期的key是怎么被删除的.md",
+                "说一下Synchronized底层实现，锁升级的具体过程.md",
+                "Synchronized和Lock接口有哪些区别.md",
+                "String类为什么被设计为不可变的.md",
+                "让你写一个爬虫系统，如何对url进行去重.md",
+                "同样是注册中心，Zookeeper和Eureka有哪些区别.md",
+                "MVCC是如何实现的.md",
+                "脏读，不可重复读，幻读是如何发生的.md",
+                "索引为什么会失效.md",
+                "怎么查找etc目录下大于1M的文件.md",
+                "一张千万级别数据的表想做分页，如何优化.md"
             ]
         }
     ]
