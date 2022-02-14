@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Resource和@Autowired有啥区别？
+title: Resource和Autowired有啥区别？
 lock: need
 ---
 
