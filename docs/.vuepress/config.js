@@ -186,7 +186,12 @@ function java() {
                 "内存泄漏，内存溢出如何排查.md",
                 "AQS有啥作用啊.md",
                 "如何快速定位慢SQL.md",
-                "Spring MVC拦截器有哪些应用场景.md"
+                "Spring MVC拦截器有哪些应用场景.md",
+                "Spring Boot 自动装配是如何实现的.md",
+                "如何手写一个Spring Boot starter.md",
+                "说一下Spring MVC的启动流程呗.md",
+                "说一下Spring Boot的启动过程把.md",
+                "说一下Spring容器启动流程.md"
             ]
         }
     ]
