@@ -50,50 +50,8 @@ public static void main(String[] args) {
 }
 ```
 结果报异常了，因为部分线程获取的时间不对![在这里插入图片描述](https://img-blog.csdnimg.cn/20190601173342951.PNG?)
-这个异常就不从源码的角度分析了，写一个小Demo，理解了这个小Demo，就理解了原因
 
-一个将数字加10的工具类
-```java
-public class NumUtil {
-
-    public static int addNum = 0;
-
-    public static int add10(int num) {
-        addNum = num;
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return addNum + 10;
-    }
-}
-```
-
-```java
-public static void main(String[] args) {
-
-	ExecutorService service = Executors.newFixedThreadPool(20);
-
-	for (int i = 0; i < 20; i++) {
-		int num = i;
-		service.execute(()->{
-			System.out.println(num + " " +  NumUtil.add10(num));
-		});
-	}
-	service.shutdown();
-}
-```
-然后代码的一部分输出为
-
-```text
-0 28
-3 28
-7 28
-11 28
-15 28
-```
-什么鬼，不是加10么，怎么都输出了28？这主要是因为线程切换的原因，线程陆续将addNum值设置为0 ，3，7但是都没有执行完（没有执行到return addNum+10这一步）就被切换了，当其中一个线程将addNum值设置为18时，线程陆续开始执行addNum+10这一步，结果都输出了28。SimpleDateFormat的原因和这个类似，那么我们如何解决这个问题呢？
+那么我们如何解决这个问题呢？
 
 ### 解决方案
 **解决方案1：每次来都new新的，空间浪费比较大**
@@ -165,25 +123,8 @@ public class DateUtil {
     }
 }
 ```
-上面的加10的工具类可以改成如下形式（主要为了演示ThreadLocal的使用）
 
-```java
-public class NumUtil {
-
-    private static ThreadLocal<Integer> addNumThreadLocal = new ThreadLocal<>();
-
-    public static int add10(int num) {
-        addNumThreadLocal.set(num);
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return addNumThreadLocal.get() + 10;
-    }
-}
-```
-现在2个工具类都能正常使用了，这是为啥呢？
+现在这个工具类能正常使用了，这是为啥呢？
 ### 原理分析
 当多个线程同时读写同一共享变量时存在并发问题，如果不共享不就没有并发问题了，一个线程存一个自己的变量，类比原来好几个人玩同一个球，现在一个人一个球，就没有问题了，如何把变量存在线程上呢？其实Thread类内部已经有一个Map容器用来存变量了。它的大概结构如下所示
 
