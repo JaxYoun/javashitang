@@ -192,6 +192,7 @@ public static void main(String[] args) {
 Spring用了jdk动态代理和cglib来实现动态代理。生成代理对象用了工厂模式。从api中就可以很清晰的看出来
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/6a1031c103ff4375a0e4238dee47e556.png?)
+
 **jdk动态代理**
 
 ```java
@@ -353,6 +354,7 @@ public static void main(String[] args) {
 如果让你实现对象的自动代理，你会怎么做呢？
 
 当然是通过BeanPostProcessor来干预Bean的声明周期，聪明！Spring就是这么干的，来验证一下我们的想法
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/29564c2daee145cead269f6fe26d4e59.png?)
 看这个类的继承关系，基本上就验证了我们的想法了。我们只要看看他重写了BeanPostProcessor的哪些方法即可？
 
@@ -362,6 +364,7 @@ postProcessBeforeInstantiation（Bean实例化前阶段执行）
 getEarlyBeanReference(Bean实例化后阶段执行)
 postProcessAfterInitialization（Bean初始化后阶段执行）
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ccbe76f0d46f461c95bff1648935d721.png?)
+
 我这里先简单总结一下，后续会对这3个阶段进行详细的分析
 
 **所以当面试官问你Spring AOP和IOC是如何结合在一起的时候，你是不是知道该如何回答了？**

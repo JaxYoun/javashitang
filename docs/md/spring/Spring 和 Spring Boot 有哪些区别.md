@@ -46,7 +46,9 @@ lock: need
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e319b99e6ff84d99b411e46de2b7e683.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/04aa9569a4624461880980fd6ea40cc5.png?)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/495f98e9b11d4ba9bb4780fc14238cc1.png?)
+
 这3个类就是我们之前分析Spring MVC源码用到的，工作原理我就不再重复了。现在我们要把它改造为直接通过main方法运行
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/fac12bd849584f9eb64be40789975e2a.png?)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c19a58b2860b4779b2ed2cfa9c7a3ae1.png?)
 点击main方法即可运行，和我们启动Spring Boot的方式很类似把。这里说个挺有意思的问题，为什么我们这个Demo运行完main方法后为什么没有直接退出呢？

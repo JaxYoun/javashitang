@@ -62,6 +62,7 @@ public interface Servlet {
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210403151905346.png?)
+
 **和servlet配置和容器相关的配置类**
 
 ServletConfig（获取Servlet的初始化属性）
@@ -124,7 +125,9 @@ Listener（监听器）：是基于事件的一种扩展机制，在Servlet容�
 mvn tomcat7:run
 ```
 或者点击idea中的侧边栏
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200321151102550.PNG)
+
 **maven8**
 ```xml
 <pluginRepositories>

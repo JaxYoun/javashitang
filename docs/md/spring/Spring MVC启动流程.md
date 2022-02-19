@@ -37,6 +37,7 @@ public interface Servlet {
 考虑到很多小伙伴可能对Servlet的很多用法不熟悉了，简单介绍一下，就用xml配置了，当然你可以用JavaConfig的方式改一下
 
 项目结构如下
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210325150909797.png)
 
 web.xml
@@ -132,6 +133,7 @@ public class MyServletContextListener implements ServletContextListener {
 ### 基于Xml写一个Spring MVC应用
 我们基于xml方式写一个spring mvc应用，基于这个应用来分析，项目结构如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210325151118208.png)
+
 web.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

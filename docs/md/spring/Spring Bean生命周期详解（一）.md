@@ -25,7 +25,9 @@ SingletonBeanRegistry：实现对单例Bean的注册和互殴去
 DefaultSingletonBeanRegistry：对SingletonBeanRegistry进行实现。用map保存生成的单例Bean
 
 因为初始化非延迟单例Bean的调用链路比较深，我先画一个简图，后续源码解析都围绕这个简图来展开。你可以先看一下这个简图，后续看源码就非常容易理解了！
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/41cb7c1c205d49f9afea9ee57ee5b801.png?)
+
 Spring Bean生命周期的过程比较复杂，因此我用两节来分享。**第一节了解Bean生命周期的主要执行链路，涉及到BeanPostProcessor执行的部分全部跳过。第二季主要分析BeanPostProcessor的执行部分。**
 
 这样先了解执行链路，再了解执行细节的方式，大家更容易接受，也不会晕车。毫不夸张的说，搞懂了Spring生命周期，就把Spring搞懂了一半
@@ -38,11 +40,15 @@ Spring Bean生命周期的过程比较复杂，因此我用两节来分享。**�
 4. FactoryBean实例化 Bean
 
 写个demo演示一下这几种方式
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2334de472adc4ce3a85b7ee737cf4bbc.png?)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/7dc76f1c654142b4a0460e759041c58d.png)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/33852fd8386742debe0d6ea2b3f3cdd2.png?)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6685f946af9f4c3cbcfe392e98953f6e.png?)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8d249fb604c0443884db8dc0cc46078a.png)
 可以看到当我们用FactoryBean实现类的名字来获取Bean时，获取到的并不是FactoryBean，而是调用FactoryBean#getObject方法创建出来的对象。
 

@@ -312,6 +312,7 @@ DefaultSingletonBeanRegistry#getSingleton
 AbstractAutowireCapableBeanFactory#doCreateBean（删除了部分代码哈）
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/93416b9665274ee998218aeae51ae28c.png?)
 发生循环依赖时，会从工厂里获取代理对象哈
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/75cbc3c3cf134a9f8abebabaae218f88.png?)
 当开启aop代理时，SmartInstantiationAwareBeanPostProcessor的一个实现类有AbstractAutoProxyCreator
 
@@ -321,11 +322,13 @@ getEarlyBeanReference方法提前进行代理，为了防止后面再次进行�
 
 AbstractAutoProxyCreator#postProcessAfterInitialization
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4f26ed9a308f4e04a1cbdd8f99b00a89.png)
+
 这个方法是进行aop代理的地方，因为有可能提前代理了，所以先根据earlyProxyReferences判断一下，是否提前代理了，提前代理过就不用代理了
 
 当bean初始化完毕，会放入一级缓存，并从二三级缓存删除
 
 DefaultSingletonBeanRegistry#addSingleton
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/d871349721aa4a959e67c3a403a27399.png)
+
 发生循环依赖时，整体的执行流程如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0fd882ca9fcc4c14941065dafe0e0d34.png?)

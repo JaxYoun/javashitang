@@ -47,6 +47,7 @@ System.out.println(animal1 == animal2);
 **这个例子就充分体现了BeanFactoryPostProcessor方法需要排序调用的重要性了，按照之前的排序规则ConfigurationClassPostProcessor类的调用时机会早于MyBeanFactoryPostProcessor，此时Bean已经都注入到容器中了，所以能将所有Bean的作用域修改为prototype，如果先执行MyBeanFactoryPostProcessor后执行ConfigurationClassPostProcessor，那只会修改部分Bean的作用域为prototype。这样你用起来估计都会懵逼**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210527005222400.png?)
+
 **BeanPostProcessor接口可以对Bean生命周期中的很多部分进行扩展，并且Spring容器中有很多内建的BeanPostProcessor对Spring Bean的功能进行支持。搞懂了Spring内置的BeanPostProcessor的功能，基本上就把Spring Bean的生命周期搞懂了**。其余的如事件，国际化，资源管理在此基础上就很容易理解了
 
 

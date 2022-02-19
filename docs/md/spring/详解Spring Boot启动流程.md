@@ -95,6 +95,7 @@ SpringApplication的创建比较简单，画图总结一下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a94deccb22bf4c7699dcb526253aa5d6.png?)
 SpringApplication的源码就不追了，大概就是这样一个启动流程
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2fcaaf88d24f4c7aa4f079497489bb49.png?)
+
 其中通告starting，就是执行SpringApplicationRunListener#starting方法。以此类推
 
 ##  WebServer的创建与启动
@@ -134,6 +135,7 @@ ServletWebServerApplicationContext#getSelfInitializer
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/665df21476ad46ac8595adb5b4be0f04.png?)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/7bbe39cc8d814738bf792cfe3905df35.png?)
 ![请添加图片描述](https://img-blog.csdnimg.cn/2225b825087e452289280e94e741020c.png)
+
 DispatcherServletRegistrationBean实现了ServletContextInitializer接口，在onStartup方法中将servlet注入到servlet容器
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210328172814634.png?)
