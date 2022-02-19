@@ -42,7 +42,9 @@ lock: need
 | Properties  | 消息属性 | PropertiesLength字节|
 
 ConsumerQueue中消息的格式如下
+
 ![请添加图片描述](https://img-blog.csdnimg.cn/23c4b59e7a7a4de9876125426944af99.png)
+
 **根据commitlog offset 和 size 就能从IndexFile中获取到具体的消息内容，而 tag hashcode 用来根据topic+tag消费时过滤消息**
 
 从存储图看到还有一个IndexFile和CommitLog也有关系
@@ -101,9 +103,13 @@ System.out.println(sendResult);
 **IndexFile构成过程比较麻烦，画图演示一下把，你可以把IndexFile想成基于文件实现的HashMap**。
 
 假如说往数组长度为10的HashMap依次放入3个key为11，34，21的数据（以尾插法演示了哈），HashMap的结构如下
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021042316522844.png?)
+
 **将key为11，34，21的数据放到IndexFile中的过程如下（假如hash槽的数量为10**）
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210509155655982.png?)
+
 具体的过程为
 1. 将消息顺序放到Index条目中，将11放到index=1的位置（用index[1]表示哈），11%1=1，算出hash槽的位置是1，存的值是0（刚开始都是0，用hash[0]表示），将index[1].preIndexNo=hash[0]=0，hash[0]=1（1为index数组下标哈）
 2. 将34放到index[2]，34%10=4，index[2].preIndexNo=hash[0]=0
@@ -122,10 +128,15 @@ org.apache.rocketmq.store.index.IndexFile#selectPhyOffset
 ```
 ## 其他文件
 除了上述三种文件外，在rocketmq store文件夹下还有如下几种其他文件
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c90c73401af9460da8435f282da86003.png)
+
 lock：有时候一台机器上会起多个broker，如果数据文件放在一个目录，这时候可以通过锁来提示你使用另一个目录，防止冲突
+
 checkpoint：文件检查点，存储commitLog最后一次刷盘时间戳，consumeQueue最后一次刷盘时间戳，IndexFile最后一次刷盘时间戳
+
 config：运行期间一些配置信息
+
 abort：如果存在abort文件说明Broker非正常关闭，该文件默认启动时创建，正常退出时删除
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/ad15b732e7114c56996024153021d0c9.png)

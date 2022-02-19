@@ -176,11 +176,15 @@ public class NamesrvStartup {
 }
 ```
 这个启动流程比较简单，就不追源码了，简单画图总结一下
+
 ![请添加图片描述](https://img-blog.csdnimg.cn/0ddb7e473a4b4ac3a5fb5905f75cbc5f.png?)
+
 启动NettyRemotingServer的时候，这几个关键的ChannelHandler需要注意一下
 
 NettyEncoder：编码器，将RemotingCommand转为字节
-NettyDecoder：解码器，将字节转为RemotingCommand，
+
+NettyDecoder：解码器，将字节转为RemotingCommand
+
 NettyServerHandler：用来处理接收到的请求
 
 我们所有发出去的请求都会构建成RemotingCommand对象然后转为byte发送出去，同理接收到的所有请求都会转为RemotingCommand对象，这样方便我们在程序内部进行处理。即RemotingCommand是一个协议对象
