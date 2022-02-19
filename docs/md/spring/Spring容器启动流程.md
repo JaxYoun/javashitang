@@ -30,6 +30,7 @@ BeanDefinitionReader将配置的bean解析成为BeanDefinition，需要将BeanDe
 BeanFactory会根据BeanDefinition将Bean生产出来
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/fa18ff5a13f54bc289b9a4a624ffbd48.png?)
+
 一些比较重要的BeanFactory如图所示。**可能你比较纳闷，为什么有的容器的类名后缀为BeanFactory，有的则为ApplicationContext？** 这其实是一个很常见的面试
 
 1. BeanFactory是一个最基础的IOC容器，提供了依赖查找，依赖注入等基础的功能
